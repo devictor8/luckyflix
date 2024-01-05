@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,300;1,100&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Genos', sans-serif;
+    background: linear-gradient(137deg, #110F11 35%, #311149,#261960);
+    min-height: 100vw;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin: auto;
+}
+
+main {
+    max-width: 350px;
+    margin: auto;
+}
+
+#info_filme {
+    display: flex;
+}
+
+#menu {
+    margin: auto;
+    text-align: center;
+}
+
+#botão {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: clamp(5px, 5vw, 18px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 2%;
+    width: 50%;
+}
+
