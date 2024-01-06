@@ -97,7 +97,7 @@ footer > p {
 @media (max-width: 600px) {
 
     body {
-        min-height: 100vw;
+        min-height: 50vw;
     }
 
     #info_filme {
