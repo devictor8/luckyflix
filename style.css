@@ -6,10 +6,12 @@
 }
 
 body {
+    
     font-family: 'Genos', sans-serif;
     background: linear-gradient(137deg, #110F11 30%, #311149,#261960);
-    min-height: 100vw;
+    min-height: 50vw;
     color: white;
+    
 }
 
 header {
@@ -19,14 +21,14 @@ header {
 }
 
 main {
-    /* background-color: red; */
     min-width: 350px;
     width: 50%;
     margin: auto;
+
 }
 
 #info_filme {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
@@ -36,7 +38,6 @@ main {
 #menu {
     margin: auto;
     text-align: center;
-
 }
 
 #botão {
@@ -62,6 +63,7 @@ main {
 #imagem_filme {
     min-width: 250px;
     width: 100%;
+    max-width: 279px;
 }
 
 #title {
@@ -75,4 +77,44 @@ main {
 
 #menu > p {
     font-size: clamp(15px, 5vw, 25px);
+}
+
+footer {
+    margin-top: 3%;
+    display: block;
+    text-align: center;
+    font-size: clamp(13px, 5vw, 18px);
+}
+
+footer > p {
+    display: inline-block;
+    border-top: #110F11;
+    border-top-style: solid;
+    border-color: #00000065;
+    border-width: 0.5px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100vw;
+    }
+
+    #info_filme {
+        flex-direction: column;
+        text-align: center
+    }
+
+    #imagem_filme {
+        min-width: 200px;
+        width: 100%;
+        max-width: 230px;
+    }
+
+    #botão {
+        font-size: 13px;
+        width: 45%;
+        padding: 2.7% 1.2%;
+    }
+
 }
