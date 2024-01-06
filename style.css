@@ -9,13 +9,13 @@ body {
     
     font-family: 'Genos', sans-serif;
     background: linear-gradient(137deg, #110F11 30%, #311149,#261960);
-    min-height: 50vw;
+    min-height: 100vh;
     color: white;
     
 }
 
 header {
-    font-size: clamp(20px, 5vw, 40px);
+    font-size: clamp(20px, 5vh, 40px);
     text-align: center;
     margin: auto;
 }
@@ -43,7 +43,7 @@ main {
 #botão {
     flex-direction: row;
     align-items: center;
-    font-size: clamp(5px, 5vw, 20px);
+    font-size: clamp(5px, 5vh, 20px);
     font-weight: bold;
     background-color: rgb(63, 60, 73);
     margin: 10px;
@@ -67,23 +67,23 @@ main {
 }
 
 #title {
-    font-size: clamp(18px, 5vw, 30px);
+    font-size: clamp(18px, 5vh, 30px);
     align-items: center;
 }
 
 #description {
-    font-size: clamp(12px, 5vw, 20px);
+    font-size: clamp(12px, 5vh, 20px);
 }
 
 #menu > p {
-    font-size: clamp(15px, 5vw, 25px);
+    font-size: clamp(15px, 5vh, 25px);
 }
 
 footer {
     margin-top: 3%;
     display: block;
     text-align: center;
-    font-size: clamp(13px, 5vw, 18px);
+    font-size: clamp(13px, 4vh, 18px);
 }
 
 footer > p {
@@ -94,10 +94,10 @@ footer > p {
     border-width: 0.5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
     body {
-        min-height: 100vw;
+        min-height: 100vh;
     }
 
     #info_filme {
@@ -115,6 +115,10 @@ footer > p {
         font-size: 13px;
         width: 45%;
         padding: 2.7% 1.2%;
+    }
+
+    #menu > p {
+        font-size: 19px;
     }
 
 }
